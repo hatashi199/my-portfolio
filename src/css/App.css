@@ -1,0 +1,54 @@
+@import url("./reset.css");
+@import url("./variables.css");
+@import url("../fonts/fonts.css");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Lato-Regular";
+  color: var(--color-text-main);
+}
+
+@media only screen and (max-width: 1440px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.scrollMainHeader_StylesTrue {
+  box-shadow: 0 -2px 4px rgba(0, 0, 0);
+  background-color: var(--bg-light) !important;
+}
+
+.scrollMainHeader_StylesTrue a {
+  color: var(--color-text-main) !important;
+}

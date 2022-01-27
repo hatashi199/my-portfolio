@@ -1,0 +1,15 @@
+:root {
+  /* Colores Texto */
+  --color-primary: #1fc1c3;
+  --color-text-main: #2c3337;
+  --color-white: #fbfbfe;
+
+  /* Colores Fondo */
+  --bg-dark: #0a253b;
+  --bg-light: #fbfbfe;
+  --bg-primary: #1fc1c3;
+  --bg-form-items: #abdee5;
+
+  /* Centrado */
+  --center-size: 85%;
+}
