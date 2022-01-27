@@ -1,6 +1,6 @@
-import { AboutBox, AboutFeature } from "./Styles";
-import { BsCodeSlash } from "react-icons/bs";
+import { AboutBox } from "./Styles";
 import { SectionBox } from "../../css/styled-components-general/Styles";
+import aboutPic from "../../assets/about-pic.png";
 
 const AboutSection = () => {
   return (
@@ -8,36 +8,23 @@ const AboutSection = () => {
       <div className="centerBox">
         <h2>SOBRE MI</h2>
         <AboutBox>
-          <AboutFeature>
-            <BsCodeSlash size="4rem" />
-            <h3>Lorem_1</h3>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
-            </p>
-          </AboutFeature>
-          <AboutFeature>
-            <BsCodeSlash size="4rem" />
-            <h3>Lorem_2</h3>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
-            </p>
-          </AboutFeature>
-          <AboutFeature>
-            <BsCodeSlash size="4rem" />
-            <h3>Lorem_3</h3>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
-            </p>
-          </AboutFeature>
+          <p>
+            Mi nombre es Alejandro Mariño Fandiño, soy Desarrollador web
+            Full-Stack Junior especializado en JavaScript y ReactJS, pero estoy
+            abierto a seguir aprendiendo otros lenguajes de programación o
+            frameworks. Desde que acabé mi etaba en bachillerato siempre me
+            interesé por la informática y decidí hacer una formación profesional
+            de grado superior en ASIR (Administración de Sistemas Informáticos
+            en Red). Ahí fue donde descubrí y me interesé mucho por la parte de
+            programación web gracias a HTML, CSS y PHP, por eso, una vez
+            finalizado la formación profesional decidí seguir adquiriendo nuevos
+            conocimientos a través de cursos y un bootcamp de JavaScript. Espero
+            tener la oportunidad de aplicar mis conocimientos en programación
+            web en los proyectos futuros que realice.
+          </p>
+          <figure>
+            <img src={aboutPic} alt="about-pic" />
+          </figure>
         </AboutBox>
       </div>
     </SectionBox>

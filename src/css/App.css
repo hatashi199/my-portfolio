@@ -10,6 +10,7 @@ html {
   font-size: 16px;
   font-family: "Lato-Regular";
   color: var(--color-text-main);
+  scroll-behavior: smooth;
 }
 
 @media only screen and (max-width: 1440px) {

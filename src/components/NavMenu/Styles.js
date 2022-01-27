@@ -7,10 +7,6 @@ const MenuList = styled.ul`
   font-size: 1.2rem;
   gap: 2em;
   letter-spacing: 1px;
-
-  a {
-    color: var(--color-text-main);
-  }
 `;
 
 export { MenuList };

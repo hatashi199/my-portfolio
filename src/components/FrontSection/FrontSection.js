@@ -1,5 +1,6 @@
 import { LinkButton } from "../LinkButton/LinkButton";
 import { FrontBox } from "./Styles";
+import cv from "../../assets/cv/CV_AlejandroMariño_v3.pdf";
 
 const FrontSection = () => {
   return (
@@ -12,13 +13,13 @@ const FrontSection = () => {
             <h1>soy Alejandro Mariño</h1>
             <h3>Desarrollador Web Full-Stack Junior</h3>
             <p className="littleDesc">
-              'Joven desarrollador con ganas de aprender'
+              'Joven programador con ganas de aprender y seguir creciendo'
             </p>
             <div className="contactLinks">
               <LinkButton primary href="#contact">
                 <span>Contáctame</span>
               </LinkButton>
-              <LinkButton href="#" download="CV_AlejandroMariño.pdf">
+              <LinkButton href={cv} download="CV_AlejandroMariño.pdf">
                 <span>Descargar CV</span>
               </LinkButton>
             </div>

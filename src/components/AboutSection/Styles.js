@@ -2,29 +2,25 @@ import styled from "styled-components";
 
 const AboutBox = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  gap: 4rem;
-}
-`;
-
-const AboutFeature = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-  width: 25%;
-
-  h3 {
-    font-size: 1.3rem;
-    font-style: italic;
-  }
+  gap: 6rem;
 
   p {
     line-height: 1.3rem;
     font-size: 1.1rem;
+    width: 50%;
     text-align: center;
+  }
+
+  figure {
+    width: 20%;
+
+    img {
+      width: 100%;
+      display: block;
+    }
   }
 `;
 
-export { AboutBox, AboutFeature };
+export { AboutBox };
