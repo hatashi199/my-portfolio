@@ -1,10 +1,12 @@
 import styled from "styled-components";
 import bgProjectDefault from "../../assets/snapshotEx.png";
+import pokedexPng from "../../assets/pokedexAmf.png";
+import portfolioPng from "../../assets/portfolio.png";
 
 const ProjectsBox = styled.div`
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
   gap: 4rem;
 `;
@@ -15,6 +17,14 @@ const Project = styled.div`
   align-items: center;
   gap: 2rem;
   width: 30rem;
+
+  figure.pokedexAmf {
+    background-image: url(${pokedexPng});
+  }
+
+  figure.portfolioAmf {
+    background-image: url(${portfolioPng});
+  }
 
   figure {
     background-image: url(${bgProjectDefault});

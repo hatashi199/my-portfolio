@@ -1,12 +1,27 @@
 import React from "react";
 import { InputElement, LabelInput } from "./Styles";
 
-const Input = ({ label, type }) => {
+const Input = ({
+  label,
+  type,
+  valueFormElement,
+  onChangeForm,
+  onBlurForm,
+  nameForm,
+}) => {
   return (
-    <LabelInput>
-      <span>{label}</span>
-      <InputElement type={type} />
-    </LabelInput>
+    <>
+      <LabelInput>
+        <span>{label}</span>
+        <InputElement
+          type={type}
+          name={nameForm}
+          value={valueFormElement}
+          onChange={onChangeForm}
+          onBlur={onBlurForm}
+        />
+      </LabelInput>
+    </>
   );
 };
 

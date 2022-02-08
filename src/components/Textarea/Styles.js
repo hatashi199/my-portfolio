@@ -9,6 +9,7 @@ const TextareaElement = styled.textarea`
   padding: 0.3rem 0.5rem;
   font-size: 1.3rem;
   color: var(--color-text-main);
+  resize: none;
 
   &:focus {
     outline-width: 0px;
