@@ -12,8 +12,7 @@ const formSchema = Yup.object({
     .max(100, "No está permitido mas de 100 caracteres")
     .required("Este campo es obligatorio"),
   message: Yup.string()
-    .min(20, "La cadena de caracteres debe tener un tamaño de 20-3000")
-    .max(3000, "La cadena de caracteres debe tener un tamaño de 20-3000")
+    .max(3000, "No está permitido mas de 3000 caracteres")
     .required("Este campo es obligatorio"),
 });
 
