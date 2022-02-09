@@ -1,10 +1,11 @@
-import { BoxHeader, HeaderSection, DesktopNav } from "./Styles";
+import { BoxHeader, HeaderSection, DesktopNav, ResponsiveNav } from "./Styles";
 import Logo from "../../assets/Logo.svg";
 import NavMenu from "../NavMenu/NavMenu";
 import { useEffect, useState } from "react";
 
 const MainHeader = () => {
   const [scroll, setScroll] = useState(false);
+  const [sidebarMenu, setSidebarMenu] = useState(false);
 
   const scrollStyle = scroll
     ? "scrollMainHeader_StylesTrue"
@@ -20,6 +21,10 @@ const MainHeader = () => {
     });
   }, []);
 
+  const showResponsiveMenu = () => {
+    setSidebarMenu(!sidebarMenu);
+  };
+
   return (
     <HeaderSection className={scroll && scrollStyle}>
       <BoxHeader>
@@ -29,6 +34,20 @@ const MainHeader = () => {
         <DesktopNav>
           <NavMenu />
         </DesktopNav>
+        <ResponsiveNav onClick={showResponsiveMenu}>
+          <div
+            className={
+              sidebarMenu
+                ? "hamburger hamburger--3dx is-active"
+                : "hamburger hamburger--3dx"
+            }
+          >
+            <div className="hamburger-box">
+              <div className="hamburger-inner"></div>
+            </div>
+          </div>
+          <NavMenu activeClass={sidebarMenu} />
+        </ResponsiveNav>
       </BoxHeader>
     </HeaderSection>
   );

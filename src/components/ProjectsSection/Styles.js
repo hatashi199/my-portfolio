@@ -16,7 +16,7 @@ const Project = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  width: 30rem;
+  width: 25rem;
 
   figure.pokedexAmf {
     background-image: url(${pokedexPng});

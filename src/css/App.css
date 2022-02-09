@@ -1,6 +1,7 @@
 @import url("./reset.css");
 @import url("./variables.css");
 @import url("../fonts/fonts.css");
+@import url("./iconMenuAnimation.css");
 
 * {
   box-sizing: border-box;
@@ -13,25 +14,25 @@ html {
   scroll-behavior: smooth;
 }
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 480px) {
   html {
     font-size: 15px;
   }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 768px) {
   html {
     font-size: 14px;
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   html {
     font-size: 13px;
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 1440px) {
   html {
     font-size: 12px;
   }

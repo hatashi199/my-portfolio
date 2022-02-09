@@ -36,6 +36,29 @@ const BoxHeader = styled.div`
 const DesktopNav = styled.nav`
   display: flex;
   align-items: center;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
-export { HeaderSection, BoxHeader, DesktopNav };
+const ResponsiveNav = styled.nav`
+  display: none;
+
+  .hamburger-inner,
+  .hamburger-inner::before,
+  .hamburger-inner::after,
+  .hamburger.is-active .hamburger-inner::before,
+  .hamburger.is-active .hamburger-inner::after {
+    background-color: var(--bg-light);
+  }
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+`;
+
+export { HeaderSection, BoxHeader, DesktopNav, ResponsiveNav };

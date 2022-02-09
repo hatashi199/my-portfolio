@@ -6,15 +6,21 @@ const AboutBox = styled.div`
   align-items: center;
   gap: 6rem;
 
+  .aboutText {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 50%;
+  }
+
   p {
     line-height: 1.3rem;
     font-size: 1.1rem;
-    width: 50%;
     text-align: center;
   }
 
   figure {
-    width: 20%;
+    width: 25%;
 
     img {
       width: 100%;

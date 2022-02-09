@@ -1,8 +1,8 @@
 import { MenuList } from "./Styles";
 
-const NavMenu = () => {
+const NavMenu = ({ activeClass }) => {
   return (
-    <MenuList>
+    <MenuList className={activeClass ? "active" : null}>
       <li>
         <a href="#home">Inicio</a>
       </li>
