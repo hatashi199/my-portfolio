@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import frontPhoto from "../../assets/frontPhoto.jpg";
 import frontBackground from "../../assets/frontBackground.jpg";
+import sizes from "../../screenSizes";
 
 const FrontBox = styled.div`
   display: flex;
@@ -82,6 +83,26 @@ const FrontBox = styled.div`
         display: block;
         width: 100%;
       }
+    }
+  }
+
+  @media (max-width: ${sizes.mobile_tablet}) {
+    .frontBox {
+      flex-direction: column;
+      align-items: center;
+      width: var(--center-size-mobile);
+
+      .frontText {
+        align-items: center;
+        text-align: center;
+      }
+    }
+  }
+
+  @media (max-width: ${sizes.mobile}) {
+    .contactLinks {
+      flex-direction: column;
+      width: 100%;
     }
   }
 `;

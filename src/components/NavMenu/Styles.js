@@ -10,20 +10,25 @@ const MenuList = styled.ul`
   letter-spacing: 1px;
 
   @media (max-width: ${sizes.mobile_tablet}) {
-    position: fixed;
-    top: 0;
+    position: absolute;
+    top: 100%;
     right: -100%;
     flex-direction: column;
     align-items: flex-start;
     background-color: var(--bg-light);
     z-index: 999999;
+    transition: right 1.2s ease;
+    box-shadow: -2px 2px 4px 0px rgba(0, 0, 0, 0.5);
 
     a {
-      color: var(color-text-main);
+      display: block;
+      color: var(--color-text-main);
+      padding: 1.5rem 6rem 1.5rem 1.5rem;
     }
 
     &.active {
       right: 0;
+      transition: right 0.5s ease;
     }
   }
 `;

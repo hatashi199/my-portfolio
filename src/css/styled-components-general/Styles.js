@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import sizes from "../../screenSizes";
 
 const SectionBox = styled.div`
   display: flex;
@@ -31,6 +32,12 @@ const SectionBox = styled.div`
         background-color: var(--bg-light);
         color: var(--color-text-main);
     }`};
+
+  @media (max-width: ${sizes.mobile_tablet}) {
+    .centerBox {
+      width: var(--center-size-mobile);
+    }
+  }
 `;
 
 export { SectionBox };

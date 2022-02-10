@@ -27,28 +27,30 @@ const MainHeader = () => {
 
   return (
     <HeaderSection className={scroll && scrollStyle}>
-      <BoxHeader>
-        <figure>
-          <img src={Logo} alt="main-logo" />
-        </figure>
-        <DesktopNav>
-          <NavMenu />
-        </DesktopNav>
-        <ResponsiveNav onClick={showResponsiveMenu}>
-          <div
-            className={
-              sidebarMenu
-                ? "hamburger hamburger--3dx is-active"
-                : "hamburger hamburger--3dx"
-            }
-          >
-            <div className="hamburger-box">
-              <div className="hamburger-inner"></div>
+      <div className="containerNoFixed">
+        <BoxHeader>
+          <figure>
+            <img src={Logo} alt="main-logo" />
+          </figure>
+          <DesktopNav>
+            <NavMenu />
+          </DesktopNav>
+          <ResponsiveNav onClick={showResponsiveMenu}>
+            <div
+              className={
+                sidebarMenu
+                  ? "hamburger hamburger--3dx is-active"
+                  : "hamburger hamburger--3dx"
+              }
+            >
+              <div className="hamburger-box">
+                <div className="hamburger-inner"></div>
+              </div>
             </div>
-          </div>
-          <NavMenu activeClass={sidebarMenu} />
-        </ResponsiveNav>
-      </BoxHeader>
+            <NavMenu activeClass={sidebarMenu} />
+          </ResponsiveNav>
+        </BoxHeader>
+      </div>
     </HeaderSection>
   );
 };

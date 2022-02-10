@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import sizes from "../../screenSizes";
 
 const AboutBox = styled.div`
   display: flex;
@@ -25,6 +26,28 @@ const AboutBox = styled.div`
     img {
       width: 100%;
       display: block;
+    }
+  }
+
+  @media (max-width: ${sizes.mobile_tablet}) {
+    flex-direction: column;
+
+    .aboutText {
+      width: 80%;
+    }
+
+    figure {
+      width: 30%;
+    }
+  }
+
+  @media (max-width: ${sizes.mobile}) {
+    .aboutText {
+      width: 90%;
+    }
+
+    figure {
+      width: 40%;
     }
   }
 `;

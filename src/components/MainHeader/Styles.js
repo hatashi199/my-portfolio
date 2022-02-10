@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import sizes from "../../screenSizes";
 
 const HeaderSection = styled.header`
   position: fixed;
@@ -13,6 +14,23 @@ const HeaderSection = styled.header`
 
   a {
     color: var(--color-white);
+  }
+
+  .containerNoFixed {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+  }
+
+  &.scrollMainHeader_StylesTrue .hamburger-inner,
+  &.scrollMainHeader_StylesTrue .hamburger-inner::before,
+  &.scrollMainHeader_StylesTrue .hamburger-inner::after,
+  &.scrollMainHeader_StylesTrue .hamburger.is-active .hamburger-inner::before,
+  &.scrollMainHeader_StylesTrue .hamburger.is-active .hamburger-inner::after {
+    background-color: var(--color-text-main);
   }
 `;
 
@@ -30,6 +48,10 @@ const BoxHeader = styled.div`
       width: 100%;
       display: block;
     }
+  }
+
+  @media (max-width: ${sizes.mobile_tablet}) {
+    width: var(--center-size-mobile);
   }
 `;
 
@@ -53,7 +75,7 @@ const ResponsiveNav = styled.nav`
     background-color: var(--bg-light);
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: ${sizes.mobile_tablet}) {
     display: flex;
     flex-direction: column;
     gap: 2rem;

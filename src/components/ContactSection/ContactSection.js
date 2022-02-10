@@ -2,7 +2,6 @@ import React from "react";
 import { SectionBox } from "../../css/styled-components-general/Styles";
 import { ButtonForm, ContactBox, EmailSent } from "./Styles";
 import { GrMail, GrLinkedin, GrGithub } from "react-icons/gr";
-import { FaPhoneSquare } from "react-icons/fa";
 import Textarea from "../Textarea/Textarea";
 import Input from "../Input/Input";
 import { useState } from "react";
@@ -47,26 +46,25 @@ const ContactSection = () => {
           <ul className="contactList">
             <li>
               <a href="mailto:alejandromf_199@hotmail.com">
-                <GrMail size="2rem" color="#1fc1c3" />
-                <span>alejandromf_199@hotmail.com</span>
+                <GrMail size="4rem" color="#1fc1c3" />
               </a>
             </li>
             <li>
-              <a href="tel:+34627749798">
-                <FaPhoneSquare size="2rem" color="#1fc1c3" />
-                <span>+34 627 74 97 98</span>
+              <a
+                href="https://github.com/hatashi199"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <GrGithub size="4rem" color="#1fc1c3" />
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/alejandromari%C3%B1o-fullstackdeveloper/">
-                <GrLinkedin size="2rem" color="#1fc1c3" />
-                <span>Mi LinkedIn</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/hatashi199">
-                <GrGithub size="2rem" color="#1fc1c3" />
-                <span>Mi GitHub</span>
+              <a
+                href="https://www.linkedin.com/in/alejandromari%C3%B1o-fullstackdeveloper/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <GrLinkedin size="4rem" color="#1fc1c3" />
               </a>
             </li>
           </ul>
