@@ -1,6 +1,7 @@
 import { LinkButton } from "../LinkButton/LinkButton";
 import { FrontBox } from "./Styles";
 import cv from "../../assets/cv/CV_AlejandroMariño_v3.pdf";
+import Typed from "react-typed";
 
 const FrontSection = () => {
   return (
@@ -9,8 +10,21 @@ const FrontSection = () => {
         <div className="frontBox">
           <div className="frontPhoto"></div>
           <div className="frontText">
-            <h1>Hola,</h1>
-            <h1>soy Alejandro Mariño</h1>
+            <Typed
+              strings={[
+                "Hola,",
+                "Soy Alejandro Mariño",
+                "Bienvenido/a a mi portfolio",
+              ]}
+              typeSpeed={30}
+              startDelay={1000}
+              backSpeed={60}
+              backDelay={2000}
+              loop={true}
+              className="typedStyle"
+            />
+            {/* <h1>Hola,</h1>
+            <h1>soy Alejandro Mariño</h1> */}
             <h3>Desarrollador Web Full-Stack Junior</h3>
             <p className="littleDesc">
               'Joven programador con ganas de aprender y seguir creciendo'

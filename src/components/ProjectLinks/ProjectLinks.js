@@ -1,0 +1,19 @@
+import { LinkBox } from "./Styles";
+import { BsGithub, BsLink } from "react-icons/bs";
+
+const ProjectLinks = ({ linkGithub, linkWeb }) => {
+  return (
+    <LinkBox>
+      <a href={linkGithub}>
+        <BsGithub size="3rem" color="#FFF" />
+      </a>
+      {linkWeb && (
+        <a href={linkWeb}>
+          <BsLink size="3rem" color="#FFF" />
+        </a>
+      )}
+    </LinkBox>
+  );
+};
+
+export default ProjectLinks;

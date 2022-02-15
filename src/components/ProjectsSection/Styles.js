@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import bgProjectDefault from "../../assets/snapshotEx.png";
 import pokedexPng from "../../assets/pokedexAmf.png";
 import portfolioPng from "../../assets/portfolio.png";
+import experienciasPng from "../../assets/experiencias.png";
 
 const ProjectsBox = styled.div`
   display: flex;
@@ -26,8 +26,11 @@ const Project = styled.div`
     background-image: url(${portfolioPng});
   }
 
+  figure.experiencias {
+    background-image: url(${experienciasPng});
+  }
+
   figure {
-    background-image: url(${bgProjectDefault});
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;

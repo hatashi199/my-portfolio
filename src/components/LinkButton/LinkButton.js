@@ -8,7 +8,6 @@ const LinkButton = styled.a`
   padding: 0.8rem 1.2rem;
   border-radius: 4px;
   font-size: 1.2rem;
-  width: 100%;
   ${(props) =>
     props.primary
       ? `

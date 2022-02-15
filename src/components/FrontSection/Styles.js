@@ -50,9 +50,11 @@ const FrontBox = styled.div`
     .frontText {
       display: flex;
       flex-direction: column;
+      align-items: flex-start;
       gap: 1.2rem;
+      width: 60%;
 
-      h1 {
+      .typedStyle {
         font-weight: 700;
         font-size: 4rem;
       }
@@ -71,6 +73,7 @@ const FrontBox = styled.div`
         align-items: center;
         gap: 2rem;
         margin-top: 2rem;
+        width: 100%;
       }
     }
 
