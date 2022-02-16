@@ -29,9 +29,11 @@ const MainHeader = () => {
     <HeaderSection className={scroll && scrollStyle}>
       <div className="containerNoFixed">
         <BoxHeader>
-          <figure>
-            <img src={Logo} alt="main-logo" />
-          </figure>
+          <a href=".">
+            <figure>
+              <img src={Logo} alt="main-logo" />
+            </figure>
+          </a>
           <DesktopNav>
             <NavMenu />
           </DesktopNav>
