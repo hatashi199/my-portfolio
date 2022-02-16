@@ -98,14 +98,25 @@ const FrontBox = styled.div`
       .frontText {
         align-items: center;
         text-align: center;
+        width: 100%;
+
+        .contactLinks {
+          justify-content: center;
+        }
       }
     }
   }
 
   @media (max-width: ${sizes.mobile}) {
+    .frontText {
+      width: 100%;
+    }
     .contactLinks {
       flex-direction: column;
-      width: 100%;
+
+      a {
+        width: 100%;
+      }
     }
   }
 `;

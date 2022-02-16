@@ -8,7 +8,6 @@ const LabelInput = styled.label`
   border-radius: 4px;
   padding: 0.8rem 0.8rem 0.4rem 0.8rem;
   background-color: var(--bg-form-items);
-  font-size: 1.1rem;
 `;
 
 const InputElement = styled.input`

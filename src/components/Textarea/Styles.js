@@ -10,6 +10,7 @@ const TextareaElement = styled.textarea`
   font-size: 1.3rem;
   color: var(--color-text-main);
   resize: none;
+  font-family: "Lato-Regular";
 
   &:focus {
     outline-width: 0px;

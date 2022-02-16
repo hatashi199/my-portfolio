@@ -47,14 +47,15 @@ const Project = styled.div`
       text-align: center;
       padding: 1rem 0rem;
       font-size: 1.4rem;
+      font-weight: 600;
       border-bottom-right-radius: 4px;
       border-bottom-left-radius: 4px;
     }
   }
 
   p {
-    line-height: 1.3rem;
-    font-size: 1.1rem;
+    line-height: 2rem;
+    font-size: 1.3rem;
     text-align: center;
   }
 `;

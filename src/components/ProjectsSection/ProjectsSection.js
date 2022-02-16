@@ -40,7 +40,10 @@ const ProjectsSection = () => {
               portfolio personal donde muestro todos los conocimientos,
               proyectos y habilidades conocidas.
             </p>
-            <ProjectLinks linkGithub="https://github.com/hatashi199/portfolio-amf" />
+            <ProjectLinks
+              linkGithub="https://github.com/hatashi199/portfolio-amf"
+              linkWeb="https://portfolio-amf.vercel.app/"
+            />
           </Project>
         </ProjectsBox>
       </div>

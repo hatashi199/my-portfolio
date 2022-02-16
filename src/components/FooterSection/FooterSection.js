@@ -6,12 +6,6 @@ const FooterSection = () => {
     <SectionBox primary>
       <div className="centerBox">
         <FooterBox>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
           <p>Desarrollado por Alejandro Mariño Fandiño</p>
         </FooterBox>
       </div>

@@ -16,10 +16,6 @@ const ContactBox = styled.div`
       display: flex;
       aling-items: center;
       gap: 2rem;
-
-      span {
-        font-size: 1.2rem;
-      }
     }
   }
 
@@ -33,6 +29,7 @@ const ContactBox = styled.div`
       display: flex;
       flex-direction: column;
       gap: 0.7rem;
+      font-size: 1.3rem;
     }
 
     .inputElement:nth-child(1) {
@@ -110,7 +107,7 @@ const ButtonForm = styled.input`
   border: 0;
   padding: 0.8rem 1.2rem;
   border-radius: 4px;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   cursor: pointer;
 
   @media (max-width: ${sizes.mobile}) {

@@ -23,8 +23,6 @@ const FrontSection = () => {
               loop={true}
               className="typedStyle"
             />
-            {/* <h1>Hola,</h1>
-            <h1>soy Alejandro Mariño</h1> */}
             <h3>Desarrollador Web Full-Stack Junior</h3>
             <p className="littleDesc">
               'Joven programador con ganas de aprender y seguir creciendo'
