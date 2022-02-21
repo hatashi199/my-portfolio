@@ -17,7 +17,7 @@ const {
 
 emailjs.init(REACT_APP_EMAILJS_SERVICE_ID);
 
-const ContactSection = () => {
+const ContactSection = ({ theme }) => {
   const [successEmail, setSuccessEmail] = useState(false);
 
   const sendEmail = (data) => {
@@ -39,7 +39,7 @@ const ContactSection = () => {
   };
 
   return (
-    <SectionBox light id="contact">
+    <SectionBox light id="contact" theme={theme}>
       <div className="centerBox">
         <h2>CONTACTO</h2>
         <ContactBox>

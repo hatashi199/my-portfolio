@@ -48,9 +48,4 @@ a {
 
 .scrollMainHeader_StylesTrue {
   box-shadow: 0 -2px 4px rgba(0, 0, 0);
-  background-color: var(--bg-light) !important;
-}
-
-.scrollMainHeader_StylesTrue a {
-  color: var(--color-text-main) !important;
 }

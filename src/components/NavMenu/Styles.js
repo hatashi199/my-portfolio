@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { dark, light } from "../../modeStyles";
 import sizes from "../../screenSizes";
 
 const MenuList = styled.ul`
@@ -15,14 +16,14 @@ const MenuList = styled.ul`
     right: -100%;
     flex-direction: column;
     align-items: flex-start;
-    background-color: var(--bg-light);
+    background-color: ${(props) =>
+      props.theme === "dark" ? dark.background : light.background};
     z-index: 999999;
     transition: right 1.2s ease;
     box-shadow: -2px 2px 4px 0px rgba(0, 0, 0, 0.5);
 
     a {
       display: block;
-      color: var(--color-text-main);
       padding: 1.5rem 6rem 1.5rem 1.5rem;
     }
 

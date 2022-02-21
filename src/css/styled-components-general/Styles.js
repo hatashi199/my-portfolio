@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { dark, light } from "../../modeStyles";
 import sizes from "../../screenSizes";
 
 const SectionBox = styled.div`
@@ -29,8 +30,10 @@ const SectionBox = styled.div`
   ${(props) =>
     props.light &&
     `& {
-        background-color: var(--bg-light);
-        color: var(--color-text-main);
+        background-color: ${
+          props.theme === "dark" ? dark.background : light.background
+        };
+        color: ${props.theme === "dark" ? dark.color : light.color};
     }`};
 
   @media (max-width: ${sizes.mobile_tablet}) {

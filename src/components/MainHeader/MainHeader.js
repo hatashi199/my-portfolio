@@ -2,8 +2,9 @@ import { BoxHeader, HeaderSection, DesktopNav, ResponsiveNav } from "./Styles";
 import Logo from "../../assets/Logo.svg";
 import NavMenu from "../NavMenu/NavMenu";
 import { useEffect, useState } from "react";
+import DarkLightMode from "../DarkLightMode/DarkLightMode";
 
-const MainHeader = () => {
+const MainHeader = ({ theme }) => {
   const [scroll, setScroll] = useState(false);
   const [sidebarMenu, setSidebarMenu] = useState(false);
 
@@ -26,10 +27,10 @@ const MainHeader = () => {
   };
 
   return (
-    <HeaderSection className={scroll && scrollStyle}>
+    <HeaderSection className={scroll && scrollStyle} theme={theme}>
       <div className="containerNoFixed">
         <BoxHeader>
-          <a href=".">
+          <a href="." className="mainLogo">
             <figure>
               <img src={Logo} alt="main-logo" />
             </figure>
@@ -49,8 +50,9 @@ const MainHeader = () => {
                 <div className="hamburger-inner"></div>
               </div>
             </div>
-            <NavMenu activeClass={sidebarMenu} />
+            <NavMenu activeClass={sidebarMenu} theme={theme} />
           </ResponsiveNav>
+          <DarkLightMode />
         </BoxHeader>
       </div>
     </HeaderSection>

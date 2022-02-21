@@ -11,9 +11,9 @@ import {
 import { FaReact, FaNodeJs } from "react-icons/fa";
 import { SectionBox } from "../../css/styled-components-general/Styles";
 
-const SkillsSection = () => {
+const SkillsSection = ({ theme }) => {
   return (
-    <SectionBox light id="skills">
+    <SectionBox light id="skills" theme={theme}>
       <div className="centerBox">
         <h2>HABILIDADES</h2>
         <SkillsBox>

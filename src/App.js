@@ -6,16 +6,19 @@ import SkillsSection from "./components/SkillsSection/SkillsSection";
 import ProjectsSection from "./components/ProjectsSection/ProjectsSection";
 import ContactSection from "./components/ContactSection/ContactSection";
 import FooterSection from "./components/FooterSection/FooterSection";
+import { DarkLightContext } from "./context/DarkLightMode";
+import { useContext } from "react";
 
 const App = () => {
+  const { theme } = useContext(DarkLightContext);
   return (
     <>
-      <MainHeader />
+      <MainHeader theme={theme} />
       <FrontSection />
       <AboutSection />
-      <SkillsSection />
+      <SkillsSection theme={theme} />
       <ProjectsSection />
-      <ContactSection />
+      <ContactSection theme={theme} />
       <FooterSection />
     </>
   );
