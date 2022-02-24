@@ -25,6 +25,7 @@ const MenuList = styled.ul`
     a {
       display: block;
       padding: 1.5rem 6rem 1.5rem 1.5rem;
+      color: ${(props) => (props.theme === "dark" ? dark.color : light.color)};
     }
 
     &.active {
@@ -33,5 +34,7 @@ const MenuList = styled.ul`
     }
   }
 `;
+// background-color: ${(props) =>
+//   props.theme === "dark" ? dark.background : light.background};
 
 export { MenuList };
