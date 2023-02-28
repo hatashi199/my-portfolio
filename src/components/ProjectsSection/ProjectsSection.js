@@ -29,7 +29,10 @@ const ProjectsSection = () => {
               pública de Pokémon donde continuo aprendiendo y practicando más
               cosas de React. (No responsive)
             </p>
-            <ProjectLinks linkGithub="https://github.com/hatashi199/pokedexProject" />
+            <ProjectLinks
+              linkGithub="https://github.com/hatashi199/pokedexProject"
+              linkWeb="https://pokedex-project-amf.vercel.app/"
+            />
           </Project>
           <Project>
             <figure className="portfolioAmf">
