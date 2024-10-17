@@ -4,7 +4,7 @@ const SkillsBox = styled.div`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 4rem;
+  gap: 2rem;
   width: 100%;
 `;
 
@@ -17,7 +17,8 @@ const SkillBox = styled.div`
   border-radius: 4px;
   color: var(--color-primary);
   padding: 2rem;
-
+  max-width: 120px;
+  
   h3 {
     font-size: 1.5rem;
   }

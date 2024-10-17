@@ -6,7 +6,7 @@ const SectionBox = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 4rem 0rem;
+  padding: 8rem 0rem;
 
   .centerBox {
     display: flex;
@@ -37,6 +37,8 @@ const SectionBox = styled.div`
     }`};
 
   @media (max-width: ${sizes.mobile_tablet}) {
+    padding: 4rem 0rem;
+
     .centerBox {
       width: var(--center-size-mobile);
     }

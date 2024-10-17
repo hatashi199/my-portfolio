@@ -1,6 +1,6 @@
 import { LinkButton } from "../LinkButton/LinkButton";
 import { FrontBox } from "./Styles";
-import cv from "../../assets/cv/CV_AlejandroMariño_v3.pdf";
+import cv from "../../assets/cv/CV_AlejandroMariño_v9.pdf";
 import Typed from "react-typed";
 
 const FrontSection = () => {

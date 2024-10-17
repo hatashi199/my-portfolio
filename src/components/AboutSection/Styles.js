@@ -17,7 +17,7 @@ const AboutBox = styled.div`
   p {
     line-height: 2rem;
     font-size: 1.3rem;
-    text-align: center;
+    text-align: justify;
   }
 
   figure {

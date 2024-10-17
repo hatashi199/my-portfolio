@@ -2,6 +2,7 @@ import styled from "styled-components";
 import pokedexPng from "../../assets/pokedexAmf.png";
 import portfolioPng from "../../assets/portfolio.png";
 import experienciasPng from "../../assets/experiencias.png";
+import cobaltoMod from "../../assets/cobaltoModules.png";
 
 const ProjectsBox = styled.div`
   display: flex;
@@ -30,6 +31,10 @@ const Project = styled.div`
     background-image: url(${experienciasPng});
   }
 
+  figure.cobaltoMod {
+    background-image: url(${cobaltoMod});
+  }
+
   figure {
     background-position: center center;
     background-size: cover;
@@ -54,9 +59,9 @@ const Project = styled.div`
   }
 
   p {
-    line-height: 2rem;
-    font-size: 1.3rem;
-    text-align: center;
+    line-height: 1.4rem;
+    font-size: 1.2rem;
+    text-align: justify;
   }
 `;
 
