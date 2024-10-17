@@ -1,30 +1,60 @@
-# Alejandro Mariño -- Portfolio
+# Mi Portfolio Personal - Alejandro Mariño
 
-## Available Scripts
+¡Bienvenido a mi portfolio personal! Este proyecto está desarrollado en React y desplegado en Vercel. Aquí encontrarás información sobre mis habilidades, proyectos y experiencia.
 
-### `npm start` or `yarn start`
+## Descripción
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Este portfolio tiene como objetivo mostrar mis habilidades y proyectos de una manera profesional y atractiva. Utiliza React para la construcción del frontend y Vercel para el despliegue continuo y hosting.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Características
 
-### `npm test`
+- **Interfaz Reactiva:** Diseñada con React para ofrecer una experiencia de usuario fluida y dinámica.
+- **Despliegue Continuo:** Integrado con Vercel para despliegues automáticos con cada commit.
+- **Responsive Design:** Adaptado para verse bien en dispositivos de escritorio y móviles.
+- **Sección de Proyectos:** Muestra los proyectos destacados con descripciones y enlaces a los repositorios.
+- **Sección de Habilidades:** Lista de habilidades técnicas y herramientas que manejo.
+- **Contacto:** Formulario de contacto para conectarse fácilmente conmigo.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tecnologías Utilizadas
 
-### `npm run build`
+- **Frontend:**
+  - [React](https://reactjs.org/)
+  - [CSS Modules](https://github.com/css-modules/css-modules)
+  - [JavaScript](https://www.javascript.com/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Despliegue:**
+  - [Vercel](https://vercel.com/)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Instalación y Configuración
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prerrequisitos
 
-## Link to the page
+- Node.js (>= 18.x)
+- npm o yarn
 
-The page is located [here](https://portfolio-amf.vercel.app/).
+### Instalar las dependencias
+
+```
+npm install
+```
+
+o
+
+```
+yarn
+```
+
+### Ejecución en modo desarrollo
+
+```
+npm start
+```
+o
+```
+yarn start
+```
+
+bre http://localhost:3000 para ver el proyecto en tu navegador.
+
+### Proyecto enn Vercel
+El portfolio se encuentra en este enlace [Mi Portfolio](https://portfolio-amf.vercel.app/)
