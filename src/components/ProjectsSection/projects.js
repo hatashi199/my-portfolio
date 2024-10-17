@@ -15,7 +15,8 @@ export const projectsList = [
             github: 'https://github.com/hatashi199/pokedexProject',
             web: 'https://pokedex-project-amf.vercel.app/'
         }
-    },    {
+    },
+    {
         bg: 'portfolioAmf',
         title: 'Portfolio Personal',
         description: `Este proyecto, desarrollado en ReactJS y JavaScript, es mi portfolio personal. En él, presento mis conocimientos, proyectos y habilidades, ofreciendo una visión completa de mi experiencia y competencias en desarrollo web.`,
@@ -23,12 +24,22 @@ export const projectsList = [
             github: 'https://github.com/hatashi199/portfolio-amf',
             web: 'https://portfolio-amf.vercel.app/'
         }
-    },    {
+    }, 
+    {
         bg: 'cobaltoMod',
         title: 'Cobalto Modules',
         description: `Este proyecto, desarrollado en ReactJS, incorpora software externo para implementar diversas animaciones. Realizado durante mi experiencia laboral en Aarox Electronics, este trabajo refleja mi capacidad para integrar y utilizar herramientas externas, mejorando así la interactividad y la experiencia del usuario en aplicaciones web.`,
         links: {
             web: 'https://cobaltomodules.com/'
+        }
+    },
+    {
+        bg: 'ticTacToe',
+        title: 'Tic Tac Toe',
+        description: `Este proyecto es una implementación simple del clásico juego de Tic-Tac-Toe usando React. El objetivo principal es practicar y demostrar habilidades en React y en la creación de aplicaciones interactivas.`,
+        links: {
+            github: 'https://github.com/hatashi199/ticTactToe',
+            web: 'https://tic-tact-toe-amf.vercel.app/'
         }
     }
 ]

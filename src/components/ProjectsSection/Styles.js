@@ -3,6 +3,7 @@ import pokedexPng from "../../assets/pokedexAmf.png";
 import portfolioPng from "../../assets/portfolio.png";
 import experienciasPng from "../../assets/experiencias.png";
 import cobaltoMod from "../../assets/cobaltoModules.png";
+import ticTacToe from "../../assets/ticTacToe.png";
 
 const ProjectsBox = styled.div`
   display: flex;
@@ -33,6 +34,10 @@ const Project = styled.div`
 
   figure.cobaltoMod {
     background-image: url(${cobaltoMod});
+  }
+
+  figure.ticTacToe {
+    background-image: url(${ticTacToe});
   }
 
   figure {
