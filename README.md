@@ -54,7 +54,7 @@ o
 yarn start
 ```
 
-bre http://localhost:3000 para ver el proyecto en tu navegador.
+Abre http://localhost:3000 para ver el proyecto en tu navegador.
 
 ### Proyecto enn Vercel
 El portfolio se encuentra en este enlace [Mi Portfolio](https://portfolio-amf.vercel.app/)
